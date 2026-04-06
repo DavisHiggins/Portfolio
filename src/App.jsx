@@ -529,6 +529,10 @@ export default function App() {
                       {item.eyebrow}
                     </div>
 
+                    <h3 className="text-xl font-semibold text-white">
+                      {item.title}
+                    </h3>
+
                     <div className="mt-4 flex flex-wrap gap-2">
                       {item.traits.map((trait) => (
                         <Pill key={trait}>{trait}</Pill>
