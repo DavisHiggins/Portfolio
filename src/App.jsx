@@ -196,7 +196,7 @@ const INTERESTS = [
     icon: Code2,
     title: 'Building Products',
     text:
-      'Enjoy creating tools, interfaces, and systems that make data easier to use and more valuable to people. I understand the growing importance of data science and AI in the corporate world, and I truly love implementing the concepts I have learned to discover what all I am capable of creating.',
+      'Passionate about building tools, interfaces, and systems that make data more accessible, intuitive, and valuable. I’m driven by the growing impact of data science and AI in the corporate world, and I enjoy applying what I’ve learned to create practical, real, and impactful solutions.',
   },
   {
     icon: HandHelping,
