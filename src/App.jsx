@@ -190,19 +190,19 @@ const INTERESTS = [
     icon: Trophy,
     title: 'Sports',
     text:
-      'I was a part of the football, basketball, and soccer team in high school, earning a total of 1x All-State, 3x All-Conference, and 1x Honorable Mention across all of those sports. I still play each of these sports weekly with friends, or in UNC Charlotte fraternity intramurals.',
+      'Competed in football, basketball, and soccer throughout high school, earning 1× All-State, 3× All-Conference, and 1× Honorable Mention honors. I continue to stay active in these sports through pick-up games, and weekly UNC Charlotte fraternity intramurals.',
   },
   {
     icon: Code2,
     title: 'Building Products',
     text:
-      'I enjoy creating tools, interfaces, and systems that make data easier to use and more valuable to people. I understand the growing importance of data science and AI in the corporate world, and I truly love implementing the concepts I have learned to discover what all I am capable of creating.',
+      'Enjoy creating tools, interfaces, and systems that make data easier to use and more valuable to people. I understand the growing importance of data science and AI in the corporate world, and I truly love implementing the concepts I have learned to discover what all I am capable of creating.',
   },
   {
     icon: HandHelping,
     title: 'Volunteer Work',
     text:
-      'My volunteer interests include philanthropy work with the Live Like Lou Foundation and service through Habitat for Humanity. I have always had the urge to help those who are not as fortunate, and spending time helping others and supporting people in-need is one of my favorite things to do.',
+      'Actively involved in volunteer work, including philanthropy events with the Live Like Lou Foundation and service through Habitat for Humanity. I prioritize giving back, with a strong commitment to supporting underserved communities and making a meaningful impact through service.',
   },
 ]
 
