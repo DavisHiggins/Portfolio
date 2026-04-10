@@ -667,7 +667,7 @@ export default function App() {
               <SectionHeader
                 eyebrow="SKILLS → PROFESSIONAL READINESS"
                 title="Resume"
-                subtitle="A clear, structured overview of my experience, skills, and professional readiness."
+                subtitle="A clear, structured overview of my experience, skills, and specialized capabilities."
               />
 
               <div className="grid items-start gap-6 lg:grid-cols-[1.15fr_0.85fr]">
