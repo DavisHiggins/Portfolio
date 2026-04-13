@@ -577,16 +577,16 @@ export default function App() {
       </div>
 
       <div className="min-w-0 flex-1">
-        <div className="flex items-start gap-5">
+        <div className="flex items-center gap-3">
           <h4 className="text-2xl font-semibold text-white">University of North Carolina at Charlotte</h4>
           <img
             src={unccLogo}
             alt="UNC Charlotte logo"
-            className="mt-1 h-14 w-14 shrink-0 object-contain"
+            className="h-12 w-12 shrink-0 object-contain"
           />
         </div>
 
-        <p className="mt-2 text-sm text-slate-400">
+        <p className="mt-3 text-sm text-slate-400">
           B.S. in Data Science • Minor in Artificial Intelligence • Aug 2024 – May 2027
         </p>
 
@@ -610,16 +610,16 @@ export default function App() {
       </div>
 
       <div className="min-w-0 flex-1">
-        <div className="flex items-start gap-5">
+        <div className="flex items-center gap-3">
           <h4 className="text-2xl font-semibold text-white">Catawba Valley Community College</h4>
           <img
             src={cvccLogo}
             alt="Catawba Valley Community College logo"
-            className="mt-1 h-16 w-16 shrink-0 object-contain"
+            className="h-14 w-14 shrink-0 object-contain"
           />
         </div>
 
-        <p className="mt-2 text-sm text-slate-400">Aug 2022 – May 2024</p>
+        <p className="mt-3 text-sm text-slate-400">Aug 2022 – May 2024</p>
 
         <div className="mt-5 flex flex-wrap gap-2">
           <Pill>GPA: 4.0</Pill>
