@@ -575,7 +575,7 @@ export default function App() {
       <img
         src={unccLogo}
         alt="UNC Charlotte logo"
-        className="mt-1 h-12 w-12 shrink-0 object-contain"
+        className="-mt-1 h-14 w-14 shrink-0 object-contain"
       />
 
       <div className="min-w-0 flex-1">
@@ -603,7 +603,7 @@ export default function App() {
       <img
         src={cvccLogo}
         alt="Catawba Valley Community College logo"
-        className="mt-1 h-14 w-14 shrink-0 object-contain"
+        className="-mt-1 h-16 w-16 shrink-0 object-contain"
       />
 
       <div className="min-w-0 flex-1">
