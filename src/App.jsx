@@ -51,13 +51,13 @@ const PROJECTS = [
     title: 'Propify',
     subtitle: 'Full-stack NBA player prop analytics platform with a public-facing demo and private production system.',
     description:
-      'Propify is a trademarked sports analytics platform I built from scratch to turn sports betting into a more disciplined, data-driven decision process through modeling, user-specific tracking, and product-minded design.',
+      'Propify is a trademarked sports analytics platform built from scratch to turn sports betting into a more disciplined, data-driven decision process through modeling, user-specific tracking, and product-minded design.',
     bullets: [
-      'The engine pulls NBA game log data, weights recent performance across multiple windows, applies contextual adjustments, and generates projections, hit probabilities, confidence indicators, and fair-value style outputs for each prop.',
+      'The engine combines a rules-based statistical system with a trained Random Forest Regressor, pulling NBA game log data, weighting recent performance across rolling windows, and blending ML and statistical projections to generate hit probabilities, confidence indicators, and fair-value outputs for each prop.',
       'The application includes a polished single-prop workflow, multi-leg parlay analysis, authenticated user access, protected pick tracking, grading workflows, and ROI and profit monitoring so performance can be measured over time.',
       'The private production version is positioned like a real software product, with clear subscription potential built around repeat usage, premium analytics access, and a scalable decision-support experience.',
     ],
-    stack: ['Python', 'Streamlit', 'Supabase', 'Postgres', 'Auth', 'nba_api', 'Pandas', 'NumPy', 'Matplotlib'],
+    stack: ['Python', 'Streamlit', 'Supabase', 'Postgres', 'Auth', 'nba_api', 'Pandas', 'NumPy', 'Matplotlib', 'scikit-learn'],
     primary: { label: 'Live Demo', href: 'https://propifydemo.streamlit.app/' },
     secondary: { label: 'GitHub Repository', href: 'https://github.com/DavisHiggins/PropifyDemo' },
     accent: 'from-sky-500/25 via-cyan-400/10 to-indigo-500/20',
@@ -190,19 +190,19 @@ const INTERESTS = [
     icon: Trophy,
     title: 'Sports',
     text:
-      'Competed in football, basketball, and soccer throughout high school, earning 1× All-State, 3× All-Conference, and 1× Honorable Mention honors. I continue to stay active in these sports through pick-up games, and weekly UNC Charlotte fraternity intramurals.',
+      'I was a part of the football, basketball, and soccer team in high school, earning a total of 1x All-State, 3x All-Conference, and 1x Honorable Mention across all of those sports. I still play each of these sports weekly with friends, or in UNC Charlotte fraternity intramurals.',
   },
   {
     icon: Code2,
     title: 'Building Products',
     text:
-      'Passionate about building tools, interfaces, and systems that make data more accessible, intuitive, and valuable. I’m driven by the growing impact of data science and AI in the corporate world, and I enjoy applying what I’ve learned to create practical, real, and impactful solutions.',
+      'I enjoy creating tools, interfaces, and systems that make data easier to use and more valuable to people. I understand the growing importance of data science and AI in the corporate world, and I truly love implementing the concepts I have learned to discover what all I am capable of creating.',
   },
   {
     icon: HandHelping,
     title: 'Volunteer Work',
     text:
-      'Actively involved in volunteer work, including philanthropy events with the Live Like Lou Foundation and service through Habitat for Humanity. I prioritize giving back, with a strong commitment to supporting underserved communities and making a meaningful impact through service.',
+      'My volunteer interests include philanthropy work with the Live Like Lou Foundation and service through Habitat for Humanity. I have always dedicated time to help those who are not as fortunate, and spending time helping and supporting those in-need is one of my favorite things to do.',
   },
 ]
 
@@ -667,7 +667,7 @@ export default function App() {
               <SectionHeader
                 eyebrow="SKILLS → PROFESSIONAL READINESS"
                 title="Resume"
-                subtitle="A clear, structured overview of my experience, skills, and specialized capabilities."
+                subtitle="A clear, structured overview of my experience, skills, and technical capabilities."
               />
 
               <div className="grid items-start gap-6 lg:grid-cols-[1.15fr_0.85fr]">
@@ -679,7 +679,7 @@ export default function App() {
                     <div>
                       <h3 className="text-2xl font-semibold text-white">Quick access</h3>
                       <p className="mt-6 max-w-2xl text-sm leading-7 text-slate-300">
-                        Click below to view my professional resume or visit my projects page.
+                        Click below to view my resume or visit my projects page.
                       </p>
 
                       <div className="mt-16 flex flex-wrap gap-3">
@@ -752,7 +752,7 @@ export default function App() {
               <SectionHeader
                 eyebrow="DISCIPLINE → PERSONAL GROWTH"
                 title="Interests"
-                subtitle="Activities and habits that shape my mindset, physical health, and growth outside of work."
+                subtitle="Activities and habits that shape my discipline, mindset, and growth outside of work."
               />
 
               <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
