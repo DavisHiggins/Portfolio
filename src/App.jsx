@@ -27,7 +27,7 @@ import dhLogo from './assets/dhtrans.png'
 import anthropologyAward from './assets/anthropologycert.png'
 import thecreek from './assets/thecreek.png'
 import unccLogo from './assets/uncclogotrans.png'
-import cvccLogo from './assets/cvcclogotrans!.png'
+import cvccLogo from './assets/cvcctrans2!.png'
 
 const NAV_ITEMS = [
   { label: 'Home', key: 'home', icon: Home },
