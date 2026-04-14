@@ -571,7 +571,7 @@ export default function App() {
 
                   <div className="mt-6 space-y-6">
   <div className="glass rounded-[2rem] px-6 py-7 shadow-soft">
-    <div className="flex items-start gap-4">
+    <div className="flex items-start gap-4 -ml-8">
       <div className="flex h-[104px] w-[104px] shrink-0 items-start justify-center">
         <img
           src={unccLogo}
@@ -580,7 +580,7 @@ export default function App() {
         />
       </div>
 
-      <div className="min-w-0 flex-1">
+      <div className="min-w-0 flex-1 -ml-8">
         <h4 className="text-2xl font-semibold text-white">University of North Carolina at Charlotte</h4>
 
         <p className="mt-3 text-sm text-slate-400">
