@@ -613,7 +613,7 @@ export default function App() {
   className="mt-0 h-[56px] w-[55px] object-contain"
   style={{
     filter:
-      'hue-rotate(205deg) saturate(155%) brightness(0.78) contrast(1.18) drop-shadow(0 0 2px rgba(56, 189, 248, 0.12))',
+      'hue-rotate(192deg) saturate(135%) brightness(1.18) contrast(1.08) drop-shadow(0 0 2px rgba(125, 211, 252, 0.12))',
   }}
 />
     </div>
