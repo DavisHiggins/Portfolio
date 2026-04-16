@@ -601,14 +601,18 @@ export default function App() {
   </div>
 
   <div className="glass rounded-[2rem] px-4 py-7 shadow-soft">
-    <div className="flex items-start gap-2">
-      <div className="flex h-[70px] w-[84px] shrink-0 items-start justify-center">
-        <img
-          src={cvccLogo}
-          alt="Catawba Valley Community College logo"
-          className="mt-0 h-[56px] w-[55px] object-contain"
-        />
-      </div>
+  <div className="flex items-start gap-2">
+    <div className="flex h-[70px] w-[84px] shrink-0 items-start justify-center">
+      <img
+        src={cvccLogo}
+        alt="Catawba Valley Community College logo"
+        className="mt-0 h-[56px] w-[55px] object-contain"
+        style={{
+          filter:
+            'hue-rotate(155deg) saturate(220%) brightness(1.15) contrast(1.08) drop-shadow(0 0 2px rgba(125, 211, 252, 0.18))',
+        }}
+      />
+    </div>
 
       <div className="min-w-0 flex-1">
         <h4 className="text-xl font-semibold text-white">Catawba Valley Community College</h4>
