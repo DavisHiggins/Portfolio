@@ -233,9 +233,6 @@ const CONTACT_LINKS = [
   },
 ]
 
-const EDUCATION_LOGO_FILTER =
-  'brightness(0) saturate(100%) invert(76%) sepia(19%) saturate(1037%) hue-rotate(175deg) brightness(101%) contrast(98%)'
-
 function SectionHeader({ eyebrow, title, subtitle, showSubtitle = true }) {
   return (
     <div className="mb-10 max-w-4xl">
@@ -568,114 +565,111 @@ export default function App() {
                 subtitle="Classroom efficiency, technical development, and the foundation behind my skill set."
               />
 
-              <div className="space-y-10">
+              <div className="space-y-10"/>
                 <div>
                   <h3 className="text-2xl font-semibold text-white">Academic Background</h3>
 
                   <div className="mt-6 space-y-6">
-                    <div className="glass rounded-[2rem] px-3 py-7 shadow-soft">
-                      <div className="flex items-start gap-2.5">
-                        <div className="flex h-[84px] w-[86px] shrink-0 items-start justify-center">
-                          <img
-                            src={unccLogo}
-                            alt="UNC Charlotte logo"
-                            className="mt-0 h-[55px] w-[85px] object-contain"
-                            style={{ filter: EDUCATION_LOGO_FILTER }}
-                          />
+  <div className="glass rounded-[2rem] px-3 py-7 shadow-soft">
+    <div className="flex items-start gap-2.5">
+      <div className="flex h-[84px] w-[86px] shrink-0 items-start justify-center">
+        <img
+          src={unccLogo}
+          alt="UNC Charlotte logo"
+          className="mt-0 h-[55px] w-[85px] object-contain"
+        />
+      </div>
+
+      <div className="min-w-0 flex-1">
+        <h4 className="text-2xl font-semibold text-white">University of North Carolina at Charlotte</h4>
+
+        <p className="mt-3 text-sm text-slate-400">
+          B.S. in Data Science • Minor in Artificial Intelligence • Aug 2024 – May 2027
+        </p>
+
+        <div className="mt-6 flex flex-wrap gap-2">
+          <Pill>GPA: 3.84</Pill>
+          <Pill>2x Chancellor’s List</Pill>
+          <Pill>1x Dean’s List</Pill>
+        </div>
+
+        <p className="mt-6 text-sm leading-7 text-slate-300">
+          Building a technical foundation in analytics, machine learning, statistical thinking, and applied business problem solving while pairing coursework with internships, product development, and independent projects.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div className="glass rounded-[2rem] px-4 py-7 shadow-soft">
+    <div className="flex items-start gap-2">
+      <div className="flex h-[70px] w-[84px] shrink-0 items-start justify-center">
+        <img
+          src={cvccLogo}
+          alt="Catawba Valley Community College logo"
+          className="mt-0 h-[56px] w-[55px] object-contain"
+        />
+      </div>
+
+      <div className="min-w-0 flex-1">
+        <h4 className="text-xl font-semibold text-white">Catawba Valley Community College</h4>
+
+        <p className="mt-3 text-sm text-slate-400">Aug 2022 – May 2024</p>
+
+        <div className="mt-5 flex flex-wrap gap-2">
+          <Pill>GPA: 4.0</Pill>
+          <Pill>4x President’s List</Pill>
+        </div>
+
+        <p className="mt-6 text-sm leading-7 text-slate-300">
+          Selected for a dual-enrollment program to gain college credits while completing high school.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>            
+
+                <div>
+                  <h3 className="mt-16 text-2xl font-semibold text-white">Honors</h3>
+
+                  <div className="mt-6 space-y-5">
+                    <div className="glass rounded-[2rem] p-7 shadow-soft">
+                      <div className="flex items-start gap-7">
+                        <div className="rounded-2xl bg-sky-400/10 p-3 text-sky-300">
+                          <Medal className="h-8 w-7" />
                         </div>
+                        <div className="w-full">
+                          <h4 className="text-xl font-semibold text-white">Public Anthropology Award for Excellence in Writing on Public Issues</h4>
+                          <p className="mt-2 text-sm text-slate-400">Center for a Public Anthropology • Apr 2025</p>
 
-                        <div className="min-w-0 flex-1">
-                          <h4 className="text-2xl font-semibold text-white">University of North Carolina at Charlotte</h4>
+                          <div className="mt-5 flex flex-wrap gap-2">
+                            <Pill>Published Work</Pill>
+                            <Pill>Storytelling</Pill>
+                          </div>
 
-                          <p className="mt-3 text-sm text-slate-400">
-                            B.S. in Data Science • Minor in Artificial Intelligence • Aug 2024 – May 2027
+                          <p className="mt-6 text-sm leading-7 text-slate-300">
+                            Recognized for excellence in writing on public issues. The publication was selected for its ability to address a public issue through thoughtful, persuasive, and captivating writing.
                           </p>
 
                           <div className="mt-6 flex flex-wrap gap-2">
-                            <Pill>GPA: 3.84</Pill>
-                            <Pill>2x Chancellor’s List</Pill>
-                            <Pill>1x Dean’s List</Pill>
-                          </div>
+                            <a
+                              href={anthropologyAward}
+                              target="_blank"
+                              rel="noreferrer"
+                              className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
+                            >
+                              View Certification
+                              <ExternalLink className="h-4 w-4" />
+                            </a>
 
-                          <p className="mt-6 text-sm leading-7 text-slate-300">
-                            Building a technical foundation in analytics, machine learning, statistical thinking, and applied business problem solving while pairing coursework with internships, product development, and independent projects.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="glass rounded-[2rem] px-4 py-7 shadow-soft">
-                      <div className="flex items-start gap-2">
-                        <div className="flex h-[70px] w-[84px] shrink-0 items-start justify-center">
-                          <img
-                            src={cvccLogo}
-                            alt="Catawba Valley Community College logo"
-                            className="mt-0 h-[56px] w-[55px] object-contain"
-                            style={{ filter: EDUCATION_LOGO_FILTER }}
-                          />
-                        </div>
-
-                        <div className="min-w-0 flex-1">
-                          <h4 className="text-xl font-semibold text-white">Catawba Valley Community College</h4>
-
-                          <p className="mt-3 text-sm text-slate-400">Aug 2022 – May 2024</p>
-
-                          <div className="mt-5 flex flex-wrap gap-2">
-                            <Pill>GPA: 4.0</Pill>
-                            <Pill>4x President’s List</Pill>
-                          </div>
-
-                          <p className="mt-6 text-sm leading-7 text-slate-300">
-                            Selected for a dual-enrollment program to gain college credits while completing high school.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div>
-                    <h3 className="mt-16 text-2xl font-semibold text-white">Honors</h3>
-
-                    <div className="mt-6 space-y-5">
-                      <div className="glass rounded-[2rem] p-7 shadow-soft">
-                        <div className="flex items-start gap-7">
-                          <div className="rounded-2xl bg-sky-400/10 p-3 text-sky-300">
-                            <Medal className="h-8 w-7" />
-                          </div>
-                          <div className="w-full">
-                            <h4 className="text-xl font-semibold text-white">Public Anthropology Award for Excellence in Writing on Public Issues</h4>
-                            <p className="mt-2 text-sm text-slate-400">Center for a Public Anthropology • Apr 2025</p>
-
-                            <div className="mt-5 flex flex-wrap gap-2">
-                              <Pill>Published Work</Pill>
-                              <Pill>Storytelling</Pill>
-                            </div>
-
-                            <p className="mt-6 text-sm leading-7 text-slate-300">
-                              Recognized for excellence in writing on public issues. The publication was selected for its ability to address a public issue through thoughtful, persuasive, and captivating writing.
-                            </p>
-
-                            <div className="mt-6 flex flex-wrap gap-2">
-                              <a
-                                href={anthropologyAward}
-                                target="_blank"
-                                rel="noreferrer"
-                                className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
-                              >
-                                View Certification
-                                <ExternalLink className="h-4 w-4" />
-                              </a>
-
-                              <a
-                                href={thecreek}
-                                target="_blank"
-                                rel="noreferrer"
-                                className="secondary-btn"
-                              >
-                                Publication
-                                <ExternalLink className="h-4 w-4" />
-                              </a>
-                            </div>
+                            <a
+                              href={thecreek}
+                              target="_blank"
+                              rel="noreferrer"
+                              className="secondary-btn"
+                            >
+                              Publication
+                              <ExternalLink className="h-4 w-4" />
+                            </a>
                           </div>
                         </div>
                       </div>
@@ -730,7 +724,7 @@ export default function App() {
                   <div className="glass rounded-[1.75rem] p-5 shadow-soft">
                     <div className="text-sm text-slate-400">Technical Strengths</div>
                     <div className="mt-2 text-lg font-semibold text-white">
-                      Exploratory Data Analysis, Dashboard Development, KPI Reporting, Reporting Automation, Data Cleaning, Data Validation
+                    Exploratory Data Analysis, Dashboard Development, KPI Reporting, Reporting Automation, Data Cleaning, Data Validation
                     </div>
                   </div>
                 </div>
