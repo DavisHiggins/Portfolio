@@ -712,7 +712,7 @@ export default function App() {
                       </p>
 
                       <div className="mt-16 flex flex-wrap gap-3">
-                        <a href="/docs/DBH-Resume.pdf" target="_blank" rel="noreferrer" className="primary-btn">
+                        <a href="/docs/dbh-resume.pdf" target="_blank" rel="noreferrer" className="primary-btn">
                           <FileText className="h-4 w-4" />
                           Open Resume
                         </a>
