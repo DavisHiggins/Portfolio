@@ -28,6 +28,7 @@ import anthropologyAward from './assets/anthropologycert.png'
 import thecreek from './assets/thecreek.png'
 import unccLogo from './assets/uncclogotrans.png'
 import cvccLogo from './assets/cvcctrans2!.png'
+import kewauneeLogo from './assets/kewaunee-logo.png'
 
 const NAV_ITEMS = [
   { label: 'Home', key: 'home', icon: Home },
@@ -379,7 +380,7 @@ export default function App() {
                         <div className="mt-5 rounded-[1.5rem] border border-white/10 bg-white/[0.05] p-5">
                           <div className="flex items-center gap-4">
                             <div className="rounded-2xl bg-sky-400/10 p-4 text-sky-300">
-                              <Briefcase className="h-6 w-6" />
+                              <img src={kewauneeLogo} alt="Kewaunee Scientific logo" className="h-6 w-6 object-contain" />
                             </div>
                             <div>
                               <div className="text-sm text-slate-400">Current Role</div>
