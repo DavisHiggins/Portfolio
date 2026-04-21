@@ -879,7 +879,7 @@ export default function App() {
         <div className="section-shell flex items-center justify-between gap-4 py-4">
           <div className="flex items-center gap-3">
             <div className="hidden items-center gap-3.5 sm:flex">
-              <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-2xl border border-white/10 bg-white">
+              <div className="flex h-14 w-10 items-center justify-center overflow-hidden rounded-2xl border border-white/10 bg-white">
                 <img src={dhLogo} alt="DH logo" className="h-10 w-10 object-contain" />
               </div>
 
