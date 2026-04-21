@@ -379,7 +379,7 @@ export default function App() {
 
                         <div className="mt-5 rounded-[1.5rem] border border-white/10 bg-white/[0.05] p-5">
                           <div className="flex items-center gap-4">
-                            <div className="flex h-14 w-14 items-center justify-center overflow-hidden">
+                            <div className="flex h-18 w-18 items-center justify-center overflow-hidden">
                               <img src={kewauneeLogo} alt="Kewaunee Scientific logo" className="h-[8rem] w-[8rem] object-contain" />
                             </div>
                             <div>
