@@ -379,8 +379,8 @@ export default function App() {
 
                         <div className="mt-5 rounded-[1.5rem] border border-white/10 bg-white/[0.05] p-5">
                           <div className="flex items-center gap-4">
-                            <div className="rounded-2xl bg-sky-400/10 p-4 text-sky-300">
-                              <img src={kewauneeLogo} alt="Kewaunee Scientific logo" className="h-6 w-6 object-contain" />
+                            <div className="flex h-14 w-14 items-center justify-center overflow-hidden">
+                              <img src={kewauneeLogo} alt="Kewaunee Scientific logo" className="h-14 w-14 object-contain" />
                             </div>
                             <div>
                               <div className="text-sm text-slate-400">Current Role</div>
