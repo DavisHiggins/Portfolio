@@ -880,7 +880,7 @@ export default function App() {
           <div className="flex items-center gap-3">
             <div className="hidden items-center gap-3.5 sm:flex">
               <div className="flex h-14 w-12 items-center justify-center overflow-hidden rounded-2xl border border-white/10 bg-white">
-                <img src={dhLogo} alt="DH logo" className="h-10 w-10 object-contain" />
+                <img src={dhLogo} alt="DH logo" className="h-12 w-12 object-contain" />
               </div>
 
               <div className="leading-none">
