@@ -125,6 +125,18 @@ const EXPERIENCE = [
     ],
   },
   {
+    period: 'Jan 2026 – Present',
+    title: 'Chaplain',
+    company: 'Phi Delta Theta',
+    detail: 'Faith Leadership · Brotherhood · Chapter Culture',
+    website: { label: 'Chaplain Website', href: 'https://phideltchaplain.vercel.app/' },
+    bullets: [
+      'Lead weekly Bible studies focused on faith, discipline, and brotherhood.',
+      'Develop and implement a semester-long scripture plan and engagement system to strengthen chapter culture, leadership, and personal development.',
+      'Conduct outreach and coordinate sorority Bible study mixers that create meaningful opportunities for faith-based discussion, connection, and engagement.',
+    ],
+  },
+  {
     period: 'May 2024 – Aug 2024',
     title: 'Assistant to Project Manager',
     company: 'Higgins Building Group, Inc.',
@@ -438,6 +450,15 @@ export default function App() {
                           </li>
                         ))}
                       </ul>
+
+                      {item.website ? (
+                        <div className="mt-6">
+                          <a href={item.website.href} target="_blank" rel="noreferrer" className="secondary-btn">
+                            {item.website.label}
+                            <ExternalLink className="h-4 w-4" />
+                          </a>
+                        </div>
+                      ) : null}
                     </div>
                   </motion.div>
                 ))}
@@ -713,7 +734,7 @@ export default function App() {
                       </p>
 
                       <div className="mt-16 flex flex-wrap gap-3">
-                        <a href="/docs/dbh-resume.pdf" target="_blank" rel="noreferrer" className="primary-btn">
+                        <a href="/docs/DavisHigginsResume.pdf" target="_blank" rel="noreferrer" className="primary-btn">
                           <FileText className="h-4 w-4" />
                           Open Resume
                         </a>
