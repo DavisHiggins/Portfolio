@@ -125,10 +125,10 @@ const EXPERIENCE = [
     ],
   },
   {
-    period: 'Jan 2026 – Present',
+    period: 'Apr 2026 – Present',
     title: 'Chaplain',
     company: 'Phi Delta Theta',
-    detail: 'Faith Leadership · Brotherhood · Chapter Culture',
+    detail: 'Biblical Mentorship · Brotherhood Development · Outreach',
     website: { label: 'Chaplain Website', href: 'https://phideltchaplain.vercel.app/' },
     bullets: [
       'Lead weekly Bible studies focused on faith, discipline, and brotherhood.',
