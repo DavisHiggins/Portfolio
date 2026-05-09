@@ -25,6 +25,11 @@ import headshot from './assets/founder-headshot.webp'
 import propifyLogo from './assets/proptrans.png'
 import higginsDigitalLogo from './assets/higgins-digital-logo.png'
 import kewauneeLogo from './assets/kewaunee-logo.png'
+import kewauneeScientificLogo from './assets/experience-kewaunee-logo.png'
+import pdtLogo from './assets/experience-pdt-logo.png'
+import hbgLogo from './assets/experience-hbg-logo.png'
+import mpaLogo from './assets/experience-mpa-logo.png'
+import tusLogo from './assets/experience-tus-logo.png'
 import dhLogo from './assets/dhtrans.png'
 import anthropologyAward from './assets/anthropologycert.png'
 import thecreek from './assets/thecreek.png'
@@ -123,6 +128,7 @@ const EXPERIENCE = [
     period: 'Jun 2025 – Present',
     title: 'Data Analyst Intern',
     company: 'Kewaunee Scientific Corp.',
+    logo: kewauneeScientificLogo,
     detail: 'Dashboard Development · KPI Reporting · Data Automation',
     bullets: [
       'Engineer and maintain 20+ executive dashboards and 100+ visualizations that improve reporting quality, readability, and decision-making for leadership.',
@@ -136,6 +142,7 @@ const EXPERIENCE = [
     period: 'Jan 2026 – Present',
     title: 'Founder & Web Developer',
     company: 'Higgins Digital',
+    logo: higginsDigitalLogo,
     website: 'https://higginsd.com/',
     detail: 'Responsive Websites · Production Deployment · UI/UX Optimization',
     bullets: [
@@ -149,6 +156,7 @@ const EXPERIENCE = [
     period: 'Apr 2026 – Present',
     title: 'Chaplain',
     company: 'Phi Delta Theta',
+    logo: pdtLogo,
     detail: 'Faith Leadership · Brotherhood · Chapter Culture',
     bullets: [
       'Lead weekly Bible studies focused on faith, discipline, and brotherhood.',
@@ -160,6 +168,7 @@ const EXPERIENCE = [
     period: 'Jan 2026 – Present',
     title: 'Vice President of Philanthropy',
     company: 'Phi Delta Theta',
+    logo: pdtLogo,
     detail: 'Leadership · Commitment · NC Epsilon',
     bullets: [
       'Lead fundraising strategy and execution, generating $3,000+ for the Live Like Lou Foundation.',
@@ -170,6 +179,7 @@ const EXPERIENCE = [
     period: 'May 2024 – Aug 2024',
     title: 'Assistant to Project Manager',
     company: 'Higgins Building Group, Inc.',
+    logo: hbgLogo,
     detail: 'Operational Oversight · Timeline Documentation',
     bullets: [
       'Coordinated project documentation and cross-functional workflows to support construction operations.',
@@ -180,6 +190,7 @@ const EXPERIENCE = [
     period: 'Jan 2023 – May 2024',
     title: 'Co-Founder & Operations Lead',
     company: 'Mobile Custom Apparel Business',
+    logo: mpaLogo,
     detail: 'Self-employed · Retail Sales · Business Ownership',
     bullets: [
       'Ran a mobile retail operation across regional AAU basketball tournaments, optimizing pricing, revenue splits, and product mix using live sales data.',
@@ -192,6 +203,7 @@ const EXPERIENCE = [
     period: 'Dec 2022 – May 2024',
     title: 'Warehouse Specialist',
     company: 'Touch-Up Solutions',
+    logo: tusLogo,
     detail: 'Order Fulfillment · Production · Shipment Handling',
     bullets: [
       'Executed high-volume inventory handling and order fulfillment with accuracy and efficiency.',
@@ -422,7 +434,7 @@ export default function App() {
                         <div className="mt-5 rounded-[1.5rem] border border-white/10 bg-white/[0.05] p-5">
                           <div className="flex items-center gap-4">
                             <div className="flex h-14 w-14 shrink-0 items-center justify-center overflow-hidden rounded-2xl">
-                              <img src={kewauneeLogo} alt="Kewaunee Scientific logo" className="h-full w-full object-fill" />
+                              <img src={kewauneeLogo} alt="Kewaunee Scientific logo" className="h-[50px] w-[50px] object-contain" />
                             </div>
                             <div>
                               <div className="text-sm text-slate-400">Current Role</div>
@@ -462,7 +474,14 @@ export default function App() {
                       <Briefcase className="h-4 w-4" />
                     </div>
 
-                    <div className="glass rounded-[2rem] p-6 shadow-soft">
+                    <div className="glass relative rounded-[2rem] p-6 shadow-soft">
+                      {item.logo ? (
+                        <img
+                          src={item.logo}
+                          alt={`${item.company} logo`}
+                          className="pointer-events-none absolute right-6 top-6 h-24 w-24 shrink-0 object-contain bg-transparent sm:h-28 sm:w-28"
+                        />
+                      ) : null}
                       <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
                         <div>
                           <div className="text-sm font-medium uppercase tracking-[0.18em] text-sky-300">{item.period}</div>
@@ -532,7 +551,7 @@ export default function App() {
                           <div className="inline-flex rounded-full border border-white/10 bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-sky-200">
                             {project.tag}
                           </div>
-                          <h3 className="mt-3 text-2xl font-semibold text-white">{project.title}</h3>
+                          <h3 className="mt-3 text-[1.7rem] font-semibold leading-8 text-white">{project.title}</h3>
                         </div>
                         <img
                           src={project.logo}
@@ -937,8 +956,8 @@ export default function App() {
       </div>
 
       <header className="sticky top-0 z-50 border-b border-white/10 bg-[#08111f]/85 backdrop-blur-xl">
-        <div className="mx-0 flex w-full items-center justify-between gap-4 px-6 py-4 sm:px-8 lg:px-12">
-          <div className="flex items-center gap-3">
+        <div className="mx-auto flex w-full max-w-[1600px] items-center gap-5 px-6 py-4 sm:px-8 lg:px-12">
+          <div className="flex items-center gap-3 lg:ml-8 xl:ml-20">
             <div className="hidden items-center gap-3.5 sm:flex">
               <div className="flex h-14 w-14 items-center justify-center overflow-hidden rounded-2xl border border-white/10 bg-white">
                 <img src={dhLogo} alt="DH logo" className="h-12 w-12 object-contain" />
@@ -998,7 +1017,7 @@ export default function App() {
             Contact
           </button>
 
-          <div className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-medium text-slate-300 lg:hidden">
+          <div className="ml-auto rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-medium text-slate-300 lg:hidden">
             {activeTitle}
           </div>
         </div>
