@@ -487,12 +487,16 @@ export default function App() {
 
                       <div className="relative">
                         {item.logo ? (
-                          <img
-                            src={item.logo}
-                            alt={`${item.company} logo`}
-                            className="pointer-events-none absolute right-0 top-0 h-20 w-20 shrink-0 object-contain bg-transparent sm:h-24 sm:w-24"
-                          />
-                        ) : null}
+  <img
+    src={item.logo}
+    alt={`${item.company} logo`}
+    className={`absolute right-6 top-6 object-contain bg-transparent ${
+      item.company === 'Kewaunee Scientific Corp.'
+        ? 'h-24 w-24'
+        : 'h-16 w-16'
+    }`}
+  />
+) : null}
                         <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
                           <div>
                             <div className="text-sm font-medium uppercase tracking-[0.18em] text-sky-300">{item.period}</div>
