@@ -492,7 +492,7 @@ export default function App() {
     alt={`${item.company} logo`}
     className={`absolute right-6 top-6 object-contain bg-transparent ${
       item.company === 'Kewaunee Scientific Corp.'
-        ? 'h-24 w-24'
+        ? 'h-28 w-28'
         : 'h-16 w-16'
     }`}
   />
