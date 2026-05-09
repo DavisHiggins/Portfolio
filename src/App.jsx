@@ -527,12 +527,12 @@ export default function App() {
                     <div className={`absolute inset-0 bg-gradient-to-br ${project.accent}`} />
                     <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(8,17,31,0.18),rgba(8,17,31,0.9))]" />
                     <div className="relative">
-                      <div className="mb-5 flex items-start justify-between gap-6">
+                      <div className="mb-2 flex items-start justify-between gap-6">
                         <div className="min-w-0 pt-1">
                           <div className="inline-flex rounded-full border border-white/10 bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-sky-200">
                             {project.tag}
                           </div>
-                          <h3 className="mt-4 text-2xl font-semibold text-white">{project.title}</h3>
+                          <h3 className="mt-3 text-2xl font-semibold text-white">{project.title}</h3>
                         </div>
                         <img
                           src={project.logo}
@@ -540,8 +540,8 @@ export default function App() {
                           className="h-24 w-24 shrink-0 object-contain bg-transparent sm:h-28 sm:w-28"
                         />
                       </div>
-                      <p className="mt-2 text-sm text-slate-300">{project.subtitle}</p>
-                      <p className="mt-5 text-sm leading-7 text-slate-200/90">{project.description}</p>
+                      <p className="mt-1 text-sm text-slate-300">{project.subtitle}</p>
+                      <p className="mt-3 text-sm leading-7 text-slate-200/90">{project.description}</p>
 
                       <ul className="mt-6 space-y-3 text-sm leading-7 text-slate-300">
                         {project.bullets.map((bullet) => (
@@ -937,10 +937,10 @@ export default function App() {
       </div>
 
       <header className="sticky top-0 z-50 border-b border-white/10 bg-[#08111f]/85 backdrop-blur-xl">
-        <div className="section-shell flex items-center justify-between gap-4 py-4">
+        <div className="mx-0 flex w-full items-center justify-between gap-4 px-6 py-4 sm:px-8 lg:px-12">
           <div className="flex items-center gap-3">
             <div className="hidden items-center gap-3.5 sm:flex">
-              <div className="flex h-14 w-28 items-center justify-center overflow-hidden rounded-2xl border border-white/10 bg-white">
+              <div className="flex h-14 w-14 items-center justify-center overflow-hidden rounded-2xl border border-white/10 bg-white">
                 <img src={dhLogo} alt="DH logo" className="h-12 w-12 object-contain" />
               </div>
 
